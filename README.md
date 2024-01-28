@@ -1,7 +1,6 @@
 # arcface_inversion
 Code for generating class representations using pretrained ArcFace Model for explainablity 
-https://github.com/pranavjadhav001/diffusers_hairstyle_transfer/blob/main/images/random.png?raw=true
-![alt text](https://github.com/pranavjadhav001/diffusers_hairstyle_transfer/blob/main/images/arcface_inversion_diagram.png?raw=true)
+![alt text](https://github.com/pranavjadhav001/arcface_inversion/blob/main/images/arcface_inversion_diagram.png?raw=true)
 
 ## Steps to execute :
 - pull latest pytorch docker image from docker hub
@@ -19,17 +18,17 @@ https://github.com/pranavjadhav001/diffusers_hairstyle_transfer/blob/main/images
 - Get pretrained Batch Normalization priors, store them as variables
 - Initialize random gaussian centered images once
 - Run training loop for 20k iterations, and update the input image every iteration using statistic loss ,Arcface loss and regularization loss<br/>
-![alt text](https://github.com/pranavjadhav001/diffusers_hairstyle_transfer/blob/main/images/algo.png?raw=true)
+![alt text](https://github.com/pranavjadhav001/arcface_inversion/blob/main/images/algo.png?raw=true)
 - Statistic loss is calculated using <b>running mean and variance</b> of all batch norm layers in the model
-![alt text](https://github.com/pranavjadhav001/diffusers_hairstyle_transfer/blob/main/images/formula.png?raw=true)
+![alt text](https://github.com/pranavjadhav001/arcface_inversion/blob/main/images/formula.png?raw=true)
 - You can tune <b>weight decay , alpha , learning rate, epochs, batch size</b> for different/better results.
 
 ## Results
 
 ### Target Label 0
-![alt text](https://github.com/pranavjadhav001/diffusers_hairstyle_transfer/blob/main/images/0.png?raw=true)
+![alt text](https://github.com/pranavjadhav001/arcface_inversion/blob/main/images/0.png?raw=true)
 ### Target Label 1
-![alt text](https://github.com/pranavjadhav001/diffusers_hairstyle_transfer/blob/main/images/1.png?raw=true)
+![alt text](https://github.com/pranavjadhav001/arcface_inversion/blob/main/images/1.png?raw=true)
 
 ## Notes
 - Complex dataset can show better generation of class representations
