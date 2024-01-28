@@ -1,6 +1,6 @@
 # arcface_inversion
 Code for generating class representations using pretrained ArcFace Model for explainablity 
-![alt text](https://github.com/pranavjadhav001/arcface_inversion/blob/main/images/arcface_inversion_diagram.png?raw=true)
+![alt text](https://github.com/pranavjadhav001/arcface_inversion/blob/main/images/arcface_inversion_diagram.png)
 
 ## Steps to execute :
 - pull latest pytorch docker image from docker hub
